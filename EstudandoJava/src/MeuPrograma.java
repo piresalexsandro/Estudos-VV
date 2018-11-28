@@ -1,0 +1,43 @@
+
+public class MeuPrograma {
+		public static void main(String[] args){
+			System.out.println("Alexsandro Pires - Minha primeira aplicação Java \nUm comando duas linhas");
+			int idade;
+			idade = 34;
+			// pra concatenar usar pint(literal + (variravel)
+     		System.out.println("Esta e a idade de Alexsandoro Pires " + (idade));
+     		
+     	    // calcula a idade no ano seguinte
+     		int idadeProxAno;
+     		idadeProxAno = idade + 1;
+     		System.out.println("Esta e a idade no proximo ano "+ (idadeProxAno));
+     		
+     		//Operaçoes aritimeticas
+     		
+     		System.out.println("***************** Operaçoes aritimeticas ***********************");
+     		int resultadoSoma;
+     		int resultadoSubtracao;
+     		int resultadoMultiplicacao;
+     		int resultadoDivisao;
+     		int resultadoRestoDivisao;
+     		resultadoSoma = 1 + 2;
+     		System.out.println("Resultado da Soma 1 + 2 = " + (resultadoSoma));
+     		resultadoSubtracao = 25 - 13;
+     		System.out.println("Resultado da Subracao 25 - 13 = " + (resultadoSubtracao));
+     		resultadoMultiplicacao = 43 * 7;
+     		System.out.println("Resultado da Multiplicacao 43 * 7 = " + (resultadoMultiplicacao));
+     		resultadoDivisao = 92 / 3;
+     		System.out.println("Resultado da Duvisao 92 / 3 = " + (resultadoDivisao));
+     		resultadoRestoDivisao = 92 % 3;
+     		System.out.println("Resto da Duvisao 92 % 3 = " + (resultadoRestoDivisao));
+     		
+     		double pi = 3.14;
+     		System.out.println("Variavel tipo double guarda numeros com casa decimal: " + (pi));
+     		
+     		boolean menorIdade = idade < 20;
+     		System.out.println("Variavel boolena guarda verdadeiro ou falso: " + (menorIdade));
+     		
+     		char letra = 'A';
+     		System.out.println(letra);
+		}
+}

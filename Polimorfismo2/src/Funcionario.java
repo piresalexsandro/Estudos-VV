@@ -1,0 +1,35 @@
+
+public class Funcionario {
+//	private String cargoFunc;
+//	private String setor;
+	private int matricula;
+//rivate double salario;
+/*
+	public String getCargoFunc() {
+		return cargoFunc;
+	}
+	public void setCargoFunc(String cargoFunc) {
+		this.cargoFunc = cargoFunc;
+	}
+	public String getSetor() {
+		return setor;
+	}
+	public void setSetor(String setor) {
+		this.setor = setor;
+	}
+	public double getSalario() {
+		return salario;
+	}
+	public void setSalario(double salario) {
+		this.salario = salario;
+	}
+	
+	*/
+	public int getMatricula() {
+		return matricula;
+	}
+	public void setMatricula(int matricula) {
+		this.matricula = matricula;
+	}
+	
+}

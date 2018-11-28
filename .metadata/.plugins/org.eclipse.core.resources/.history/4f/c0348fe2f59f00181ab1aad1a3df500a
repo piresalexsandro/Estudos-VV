@@ -1,0 +1,24 @@
+
+public class Maior {
+
+	private static double maior;
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		maior = obterMaior(args);
+		System.out.println("Maior paramentro passado: " + maior);
+	}
+	
+	private static double obterMaior(String[] args) {
+	// TODO Auto-generated method stub
+	for (String arg : args) {
+		Double lido = Double.parseDouble(arg);
+		if (lido >= maior){
+			maior = lido;
+		}
+	return maior;
+	}
+	return maior;
+}
+
+}

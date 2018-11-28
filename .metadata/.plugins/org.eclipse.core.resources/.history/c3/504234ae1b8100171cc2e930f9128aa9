@@ -1,0 +1,10 @@
+
+public class PessoaFj11 {
+		String nome;
+		int anoDenascimento;
+		
+		void idadeDaPessoa(int anoCorrente){
+			int idade = anoCorrente - this.anoDenascimento;
+			System.out.println("O " + this.nome + ", tem " + idade + "anos de idade .");
+		}
+}

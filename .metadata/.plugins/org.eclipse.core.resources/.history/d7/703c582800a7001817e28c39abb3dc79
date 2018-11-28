@@ -1,0 +1,66 @@
+ecutar novamente a listagem anterior e temos como saída o resultado abaixo:
+[Rua: Chacara Barreto, Número: 700, Cidade: Porto Alegre, Estado: Rio Grande do Sul, CEP: 92110300, Rua: Borges de Medeiros, Número: 1389, Cidade: Porto Alegre, Estado: Rio Grande do Sul, CEP: 92987970, Rua: Avenida Mauá, Número: 1389, Cidade: Porto Alegre, Estado: Rio Grande do Sul, CEP: 85456000]
+
+Temos um resultado muito mais claro e informativo do que o resultado anterior, sem precisar nem mesmo iterar por toda lista para saber o que há dentro dela, caso queiramos uma listagem mais simples.
+
+Como uma observação note que também poderíamos usar um StringBuffer para concatenar as nossas Strings, porém o retorno deverá ser stringbuffer.toString(). O exemplo abaixo demonstra o uso do StringBuffer:
+
+Listagem 5: Exemplo da classe Endereco sobrepondo o método toString utilizando StringBuffer.
+
+public class Endereco {
+     
+    private Integer cep;
+    private String cidade;
+    private String estado;
+    private String rua;
+    private Integer numero;
+     
+    public Integer getCep() {
+        return cep;
+    }
+    public void setCep(Integer cep) {
+        this.cep = cep;
+    }
+    public String getCidade() {
+        return cidade;
+    }
+    public void setCidade(String cidade) {
+        this.cidade = cidade;
+    }
+    public String getEstado() {
+        return estado;
+    }
+    public void setEstado(String estado) {
+        this.estado = estado;
+    }
+    public String getRua() {
+        return rua;
+    }
+    public void setRua(String rua) {
+        this.rua = rua;
+    }
+    public Integer getNumero() {
+        return numero;
+    }
+    public void setNumero(Integer numero) {
+        this.numero = numero;
+    }
+     
+    @Override
+    public String toString() {
+        StringBuffer stringBuffer = new StringBuffer();
+        stringBuffer.append("Rua: ");
+        stringBuffer.append(this.rua);
+        stringBuffer.append(", Número: ");
+        stringBuffer.append(this.numero);
+        stringBuffer.append(", Cidade: ");
+        stringBuffer.append(this.cidade);
+        stringBuffer.append(", Estado: ");
+        stringBuffer.append(this.estado);
+        stringBuffer.append(", CEP: ");
+        stringBuffer.append(this.cep);
+         
+        return stringBuffer.toString();
+    }
+     
+}

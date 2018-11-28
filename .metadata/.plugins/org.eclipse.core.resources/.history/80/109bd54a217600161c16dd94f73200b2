@@ -1,0 +1,40 @@
+package br.edu.exemplo.entidade;
+
+public class Animal {
+
+	private String alimento;
+
+	private int qtdPatas;
+
+	public Animal() {
+
+	}
+
+	public Animal(String alimento, int qtdPatas) {
+		super();
+		this.alimento = alimento;
+		this.qtdPatas = qtdPatas;
+	}
+
+	public String produzirSom() {
+
+		return "Som Generico !";
+	}
+
+	public String getAlimento() {
+		return alimento;
+	}
+
+	public void setAlimento(String alimento) {
+		this.alimento = alimento;
+	}
+
+	public int getQtdPatas() {
+		return qtdPatas;
+	}
+
+	public void setQtdPatas(int qtdPatas) {
+		this.qtdPatas = qtdPatas;
+	}
+
+}

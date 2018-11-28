@@ -1,0 +1,23 @@
+package main;
+
+//import java.util.Set;
+
+import entidade.Gerente;
+
+public class TestaGerente {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+			Gerente ger = new Gerente();
+			ger.setNome("Natanael Abdala Mansur");
+			ger.setSalario(1500.10);
+			
+			ger.aumenteSalario(0.17);
+			
+			//System.out.println(ger.getNome() + "\n" + ger.getSalario());
+			System.out.println(ger.toString());
+		
+	}
+
+}

@@ -1,0 +1,49 @@
+import java.util.ArrayList;
+import java.util.List;
+ 
+ 
+public class ExibeDados {
+ 
+    public static void main(String args []) {
+        List<Endereco> enderecos = new ArrayList<Endereco>();
+         
+        //Adiciona Primeiro Endereço
+        Endereco endereco = new Endereco();
+        endereco.setCep(92110300);
+        endereco.setCidade("Porto Alegre");
+        endereco.setEstado("Rio Grande do Sul");
+        endereco.setNumero(700);
+        endereco.setRua("Chacara Barreto");
+         
+        enderecos.add(endereco);
+         
+        System.out.println();
+        
+        //Adiciona Segundo Endereço
+        endereco = new Endereco();
+        endereco.setCep(92987970);
+        endereco.setCidade("Porto Alegre");
+        endereco.setEstado("Rio Grande do Sul");
+        endereco.setNumero(1389);
+        endereco.setRua("Borges de Medeiros");
+ 
+        enderecos.add(endereco);
+ 
+        
+       System.out.println();
+       
+        //Adiciona Terceiro Endereço
+        endereco = new Endereco();
+        endereco.setCep(85456000);
+        endereco.setCidade("Porto Alegre");
+        endereco.setEstado("Rio Grande do Sul");
+        endereco.setNumero(1389);
+        endereco.setRua("Avenida Mauá");
+ 
+        enderecos.add(endereco);
+         
+         
+        System.out.println(enderecos);
+    }
+     
+}

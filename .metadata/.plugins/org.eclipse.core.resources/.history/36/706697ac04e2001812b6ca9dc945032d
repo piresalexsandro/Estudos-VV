@@ -1,0 +1,25 @@
+import java.util.Locale;
+
+public class FormatarString {
+
+	public static void main(String[] args) {
+		String product1 = "Computer";
+		String product2 = "Office desk";
+		int age = 30;
+		int code = 1809;
+		char gender = 'F';
+		
+		double price1 = 1500.99;
+		double price2 = 453.75;
+		double measure = 53.237451;
+		
+		System.out.println("Products:");
+		//Locale.setDefault(Locale.US);
+		System.out.printf("%s which price is $", product1);
+		//System.out.printf("%a which price is $ %.2f%n", product1, price1);
+		//System.out.printf("%b which price is $ %.2f%n", product2, price2);
+		
+		
+	}
+
+}

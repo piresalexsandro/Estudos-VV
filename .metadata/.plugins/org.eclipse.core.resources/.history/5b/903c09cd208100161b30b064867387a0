@@ -1,0 +1,30 @@
+package entidade;
+
+public class CartaoCredito {
+	private String nroCartao;
+	private String validade;
+	
+	public CartaoCredito() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public String getNroCartao() {
+		return nroCartao;
+	}
+	public void setNroCartao(String nroCartao) {
+		this.nroCartao = nroCartao;
+	}
+	public String getValidade() {
+		return validade;
+	}
+	public void setValidade(String validade) {
+		this.validade = validade;
+	}
+	
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return "Numero do Cartao: " + getNroCartao() + "Validade: " + getValidade();
+	}
+
+}

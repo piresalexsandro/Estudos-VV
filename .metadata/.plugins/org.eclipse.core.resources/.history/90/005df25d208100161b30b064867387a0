@@ -1,0 +1,17 @@
+package entidade;
+
+public class Agencia {
+	private int nroAgencia;
+	Cliente cliente;
+
+	public int getNroAgencia() {
+		return nroAgencia;
+	}
+
+	public void setNroAgencia(int nroAgencia) {
+		this.nroAgencia = nroAgencia;
+	}
+	
+	
+
+}

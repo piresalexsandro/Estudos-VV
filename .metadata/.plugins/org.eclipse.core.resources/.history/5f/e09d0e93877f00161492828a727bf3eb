@@ -1,0 +1,38 @@
+package br.edu.exemplo.main;
+
+import java.util.Scanner;
+
+import br.edu.exemplo.entidade.Impressora;
+
+public class Exemplo6 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int x = 7;
+		//int preco = 15;
+		
+		Impressora imp = new Impressora();
+		
+		Scanner scan = new Scanner(System.in);
+		//String varRetorno = scan.nextLine();
+		int qtdeVezes = scan.nextInt();
+		int preco = scan.nextInt();
+		
+		if ( preco < 0) {
+			System.out.println("O preço do produto não pode ser negativo " + preco);
+		} else {
+			System.out.println(" Produto cadastrado com sucesso " + preco);
+		}
+		
+		System.out.println('\n');
+		System.out.println("Digite quantas vezes o seu nome deve ser impresso: ");
+		
+		for ( int contador = 0; contador < qtdeVezes; contador ++) {
+			imp.imprimirVariavel(qtdeVezes, contador);
+		}		
+		
+		
+	}
+
+}

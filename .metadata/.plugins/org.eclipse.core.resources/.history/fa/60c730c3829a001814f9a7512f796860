@@ -1,0 +1,10 @@
+
+public class TestClient {
+	public static void main(String[] args) {
+		Client c1 = new Client();
+		c1.nome = "Giulia dos Santos Pires";
+		c1.codCli = 20041019;
+		System.out.println("Nome do Cliente:" + c1.nome + " Codigo do Cliente: " + c1.codCli);
+	
+	}
+}

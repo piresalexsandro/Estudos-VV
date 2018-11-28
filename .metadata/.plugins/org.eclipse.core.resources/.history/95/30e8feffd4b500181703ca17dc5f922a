@@ -1,0 +1,10 @@
+package br.com.k19.banco.sistema;
+
+public class TestaFuncionarioException {
+
+	public static void main(String[] args) {
+		Funcionario f = new Funcionario();
+		f.aumentaSalario(-1500);
+	}
+
+}

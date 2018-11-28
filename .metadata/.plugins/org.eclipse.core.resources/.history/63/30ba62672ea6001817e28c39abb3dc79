@@ -1,0 +1,18 @@
+
+public class TestaGeradorExtrato {
+
+	public static void main(String[] args) {
+		Conta c = new Conta();
+		
+		GeradorExtrato ge = new GeradorExtrato();
+		
+		ContaCorrente cc = new ContaCorrente();
+		cc.getSaldo(1250.99);
+		
+		ContaPoupanca cp = new ContaPoupanca();
+		cp.getSaldo(17385.55);
+		
+
+	}
+
+}

@@ -1,0 +1,8 @@
+
+public class Conta {
+	public int contador ;
+	
+	public Conta () {
+	this . contador ++;
+	}
+}

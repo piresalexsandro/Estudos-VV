@@ -1,0 +1,14 @@
+public class ExibeDados {
+ 
+    public static void main(String args []) {
+        Endereco endereco = new Endereco();
+        endereco.setCep(92110300);
+        endereco.setCidade("Porto Alegre");
+        endereco.setEstado("Rio Grande do Sul");
+        endereco.setNumero(700);
+        endereco.setRua("Chacara Barreto");
+         
+        System.out.println(endereco);
+    }
+     
+}

@@ -1,0 +1,26 @@
+package br.com.udemy.curso;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class UpdateStock {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		Products product = new Products();
+
+		System.out.println("Enter product data: ");
+		System.out.println("Name: ");
+		System.out.println("Price: ");
+		System.out.println("Quantity in stock: ");
+		System.out.println("Product data: ");
+		
+		
+		
+		
+		sc.close();
+	}
+
+}

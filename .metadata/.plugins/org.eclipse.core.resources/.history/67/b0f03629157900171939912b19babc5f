@@ -1,0 +1,19 @@
+
+public class TestaFunionario {
+
+	public static void main(String[] args) {
+		Funcionario1 func1;
+		func1 = new Funcionario1();
+		
+		func1.nome = "Julio Maria Pires";
+		func1.dataDeNascimento = "10/02/1947";
+		func1.rg = "14994548-3";
+		func1.admissao = "01/01/1990";
+		func1.salario = 4500.00;
+		func1.matricula = 20160429;
+		
+		// chamando metodos
+		func1.recebeAumento(250.00);
+		func1.mostra();
+	}
+}

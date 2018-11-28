@@ -1,0 +1,81 @@
+package br.com.udemy.curso;
+
+public class ContaBancaria {
+
+	private int numeroDaConta;
+	private String nomeDoCliente;
+	private double valorDoSaldo = 0.00;
+	private double valorDoDeposito;
+	private double valorDoSaque;
+	private double taxaDeSaque = 5.00;
+
+	public ContaBancaria(int numeroDaConta, String nomeDoCliente, double valorDoSaldo, double valorDoDeposito,
+			double valorDoSaque, double taxaDeSaque) {
+		// super();
+		this.numeroDaConta = numeroDaConta;
+		this.nomeDoCliente = nomeDoCliente;
+		this.valorDoSaldo = valorDoSaldo;
+		this.valorDoDeposito = valorDoDeposito;
+		this.valorDoSaque = valorDoSaque;
+		this.taxaDeSaque = taxaDeSaque;
+	}
+
+	public int getNumeroDaConta() {
+		return numeroDaConta;
+	}
+
+	public void setNumeroDaConta(int numeroDaConta) {
+		this.numeroDaConta = numeroDaConta;
+	}
+
+	public String getNomeDoCliente() {
+		return nomeDoCliente;
+	}
+
+	public void setNomeDoCliente(String nomeDoCliente) {
+		this.nomeDoCliente = nomeDoCliente;
+	}
+
+	public double getValorDoSaldo() {
+		return valorDoSaldo;
+	}
+
+	public void setValorDoSaldo(double valorDoSaldo) {
+		this.valorDoSaldo = valorDoSaldo;
+	}
+
+	public double getValorDoDeposito() {
+		return valorDoDeposito;
+	}
+
+	public void setValorDoDeposito(double valorDoDeposito) {
+		this.valorDoDeposito = valorDoDeposito;
+	}
+
+	public double getValorDoSaque() {
+		return valorDoSaque;
+	}
+
+	public void setValorDoSaque(double valorDoSaque) {
+		this.valorDoSaque = valorDoSaque;
+	}
+
+	public double getTaxaDeSaque() {
+		return taxaDeSaque;
+	}
+
+	public void setTaxaDeSaque(double taxaDeSaque) {
+		this.taxaDeSaque = taxaDeSaque;
+	}
+
+	public double Deposito(double valorDoDeposito) {
+		this.valorDoSaldo += valorDoDeposito;
+		return this.valorDoSaldo;
+	}
+
+	public double Saque(double valorDoSaque) {
+		this.valorDoSaldo -= valorDoSaque - this.taxaDeSaque;
+		return this.valorDoSaldo;
+	}
+
+}

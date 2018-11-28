@@ -1,0 +1,13 @@
+package br.edu.exemplo;
+
+public class Professor {
+	private String nome;
+	private String matricula;
+	private String materia;
+	private int idade;
+	
+	public String getNome(){
+		return nome;
+	}
+	
+}

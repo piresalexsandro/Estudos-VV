@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class DoWhile {
+	public static void main(String[] args){
+		boolean continuar=true;
+		int opcao;
+		do{
+			System.out.println("Digite uma Opção");
+			
+			Scanner sc = new Scanner(System.in);
+			opcao = sc.nextInt();
+			if (opcao == 8){
+				continuar = false;
+				System.out.println("Fim do Programa");
+			}
+		} while(continuar);
+	}
+}

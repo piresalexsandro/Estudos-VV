@@ -1,0 +1,8 @@
+
+public class MeuPrograma {
+		public static void main(String[] args){
+			System.out.println("Alexsandro Pires - Minha primeira aplicação Java \num comando duas linhas");
+			//System.out.println("imprimindo mais de uma linha");
+		}
+
+}

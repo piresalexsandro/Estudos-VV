@@ -1,0 +1,37 @@
+package application;
+
+import java.util.Date;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+
+public class ProgramDate {
+
+	public static void main(String[] args) throws  ParseException {
+		SimpleDateFormat sdf1 = new SimpleDateFormat("dd/MM/yyyy");
+		SimpleDateFormat sdf2 = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+		
+		Date x1 = new Date();
+		Date x2 = new Date(System.currentTimeMillis());
+		Date x3 = new Date(0L);
+		
+		Date y1 = sdf1.parse("18/09/2018");
+		Date y2 = sdf1.parse("18/09/2018 15:04:25");
+		
+		System.out.println("Current Date x1: " + x1);
+		System.out.println("Current Date x2: " + x2);
+		System.out.println("Current Date Format x1: " + sdf2.format(x1));
+		System.out.println("Current Date Format x2: " + sdf2.format(x2));
+		System.out.println("Por milisegundos x3: " + sdf2.format(x3));
+		System.out.println();
+		
+		System.out.println("y1: " + y1);
+		System.out.println("y2: " + y2);
+		System.out.println("y1: " + sdf2.format(y2));//imprime no formato quando instanciado
+		System.out.println("y2: " + sdf2.format(y2));//imprime no formato quando instanciado
+		System.out.println();
+		
+		System.out.println("sdf1: " + sdf1.format(y1));//imprime no formato quando instanciado
+		System.out.println("sdf2: " + sdf2.format(y2));//imprime no formato quando instanciado
+	}
+
+}

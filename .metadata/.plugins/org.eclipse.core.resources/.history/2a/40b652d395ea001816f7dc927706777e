@@ -1,0 +1,21 @@
+package br.com.udemy.curso;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class TestaContaBancaria {
+
+	public static void main(String[] args) {
+
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		int numeroDaConta = sc.nextInt();
+		String nomeDoCliente = sc.nextLine();
+		double valorDoDeposito = sc.nextDouble();
+		double valorDoSaque = sc.nextDouble();
+		String temDepositoIncial = sc.nextLine();
+		
+	}
+
+}

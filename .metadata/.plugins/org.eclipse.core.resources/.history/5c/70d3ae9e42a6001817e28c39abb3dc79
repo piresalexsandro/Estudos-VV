@@ -1,0 +1,21 @@
+
+public class TestaControleDePonto {
+
+	public static void main(String[] args) {
+
+		//Funcionario func = new Funcionario();
+		
+		ControleDePonto cdp = new ControleDePonto();
+		
+		Gerentes g = new Gerentes();
+		g.setMatricula(145874);
+
+		Telefonista t = new Telefonista();
+		t.setMatricula(9458);
+		
+		cdp.registraEntrada(g);
+		cdp.registraEntrada(t);
+
+	}
+
+}

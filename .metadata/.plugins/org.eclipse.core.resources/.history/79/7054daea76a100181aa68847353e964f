@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class TestaValeRefeicao {
+
+	public static void main(String[] args) {
+		Funcionario.valorVr = 10;
+
+		Scanner taxaDigitada = new Scanner(System.in);
+		System.out.println("Digite a Taxa de Aumento do Vale Refeição"); // usar vírgula 
+		double novaTaxa = taxaDigitada.nextDouble();
+		Funcionario.aumentaValorVr(novaTaxa);
+		
+		System.out.println("Novo valor do Vale Refeição..: " + Funcionario.valorVr);
+		
+		taxaDigitada.close();
+	}
+
+}

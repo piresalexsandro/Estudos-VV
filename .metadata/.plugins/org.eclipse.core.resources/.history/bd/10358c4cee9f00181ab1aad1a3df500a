@@ -1,0 +1,22 @@
+
+public class Media {
+
+	public static void main(String[] args) {
+		/* Faça um programa que calcule a média dos parâmetros passados para o método main. Crie uma
+		classe chamada Media para implementar esse programa. Dica: para converter strings para double
+		utilize o método parseDouble()
+		*/
+		double total = 0;
+		//String s = "10";
+		//double d = Double.parseDouble(s);
+				
+		for(String arg : args){
+			double d = Double.parseDouble(arg);
+			total += d;
+		}
+
+		System.out.println("total dos parametros: "+ total);
+
+	}
+
+}

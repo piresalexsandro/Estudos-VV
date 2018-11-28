@@ -1,0 +1,27 @@
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class ControleDePonto {
+	
+	public void registraEntrada(Funcionario f){
+		SimpleDateFormat sdf = new SimpleDateFormat("dd/mm/yyyy HH:mm:ss");
+		Date dataHoje = new Date();
+			
+		System.out.println("Entrada..: " + f.getMatricula() + " às " + sdf.format(dataHoje));
+		System.out.println();
+		
+//		public String toString(){
+//			return "Entrada..: " + f.getMatricula() + " às " + sdf.format(dataHoje)
+//		}
+	}
+	
+
+	public void registraSaida(Funcionario f){
+		SimpleDateFormat sdf = new SimpleDateFormat("dd/mm/yyyy HH:mm:ss");
+		Date dataHoje = new Date();
+		
+		System.out.println("Saida..: " + f.getMatricula() + " às " + sdf.format(dataHoje));
+		System.out.println();
+	}
+	
+}

@@ -1,0 +1,12 @@
+
+public class TestCreditCard {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		CreditCard cc1 = new CreditCard();
+		cc1.cardNumber = "8345954814227854";
+		cc1.expirationDate = "31/12.2025";
+		System.out.println("Numero do Cartão: " + cc1.cardNumber + " Data de Validade: " + cc1.expirationDate);
+	}
+
+}

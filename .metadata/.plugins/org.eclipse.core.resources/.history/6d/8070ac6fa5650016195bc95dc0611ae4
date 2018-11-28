@@ -1,0 +1,34 @@
+package br.edu.exemplo;
+
+public class Exemplo1 {
+
+	public static void main(String[] args) {
+		String nome;
+		String matricula;
+		String materia;
+		int idade;
+		
+		Professor p1 = new Professor();
+		p1.setNome("Armando Nogueira Trough");
+		p1.setMatricula("ANT26110000");
+		p1.setMateria("Historia");
+		p1.setIdade(48);
+		
+		Professor p2 = new Professor();
+		p2.setNome("Sandoval Quaresma");
+		p2.setMatricula("SQ17010000");
+		p2.setMateria("Matematica");
+		p2.setIdade(36);
+		
+		Professor p3 = new Professor();
+		p3.setNome("Pablo Escobar Gaviria");
+		p3.setMatricula("PEG18091981");
+		p3.setMateria("Socialismo");
+		p3.setIdade(42);
+		
+		System.out.println(p1.getNome() + ",  " + p1.getMatricula() + ", " + p1.getMateria() + ", " + p1.getIdade());
+		System.out.println(p2.getNome() + ",  " + p2.getMatricula() + ", " + p2.getMateria() + ", " + p2.getIdade());
+		System.out.println(p3.getNome() + ",  " + p3.getMatricula() + ", " + p3.getMateria() + ", " + p3.getIdade());
+	}
+
+}

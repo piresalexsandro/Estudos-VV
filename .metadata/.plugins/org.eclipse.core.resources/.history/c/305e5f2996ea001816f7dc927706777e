@@ -1,0 +1,39 @@
+package br.com.udemy.curso;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class TestaContaBancaria {
+
+	public static void main(String[] args) {
+
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Enter account number: ");
+		int numeroDaConta = sc.nextInt();
+		
+		System.out.println("Enter account holder: ");
+		String nomeDoCliente = sc.nextLine();
+		
+		System.out.println("Is there na initial deposit (y/n)? ");
+		String temDepositoIncial = sc.nextLine();
+		
+		if (temDepositoIncial == "y"){
+			System.out.println("Enter initial deposit value: ");
+		};
+		
+		System.out.println("Enter a deposit value: ");
+		double valorDoDeposito = sc.nextDouble();
+
+		//System.out.println("Account data: ");
+        //System.out.println("Updated account data: ");
+        
+        System.out.println("Enter a withdraw value: ");
+		double valorDoSaque = sc.nextDouble();
+		
+		ContaBancaria cb1 = new ContaBancaria();
+		
+	}
+
+}

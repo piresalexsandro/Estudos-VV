@@ -1,0 +1,21 @@
+
+public class BankAccount {
+	public int accountNum;
+	public double accountBalance;
+	public double accountLimit;
+	
+	public BankAgency bankAgency;
+	
+	void deposita(double valorDep){
+		this.accountBalance += valorDep;
+	}
+	
+	void saca(double valorSaque){
+		this.accountBalance -= valorSaque;
+	}
+	
+	double consultaSaldoDisponivel(){
+		return this.accountBalance + this.accountLimit;
+	}
+	
+}

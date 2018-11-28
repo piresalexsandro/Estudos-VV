@@ -1,0 +1,11 @@
+
+public class TestaContador {
+
+	public static void main(String[] args) {
+		Conta c1 = new Conta();
+		System.out.println("Contador...: " + c1.contador);
+		Conta c2 = new Conta();
+		System.out.println("Contador...: " + c2.contador);
+	}
+
+}

@@ -1,0 +1,41 @@
+package br.com.udemy.curso;
+
+import java.text.DecimalFormat;
+import java.util.Locale;
+import java.util.Scanner;
+
+public class UpdateStock {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		Products product = new Products();
+
+		System.out.println("Enter product data:");
+		
+		System.out.print("Name: ");
+		product.name = sc.nextLine();
+		
+		//DecimalFormat dFormat = new DecimalFormat("#.###");
+		//dFormat.product.price;
+		System.out.print("Price: ");
+		product.price = sc.nextDouble();
+		
+		System.out.println("Quantity in stock: ");
+		product.quantity = sc.nextInt();
+		
+		product.toString();
+		System.out.println(product);
+		//product.totalValueInStock();
+
+		System.out.printf(product.name + ", " + product.price + ", " + product.quantity);
+		//System.out.printf("Product data: %s, $%.2f, Total: $%.2f");
+		
+		
+		
+		
+		sc.close();
+	}
+
+}

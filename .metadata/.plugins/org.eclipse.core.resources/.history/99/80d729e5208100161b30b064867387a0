@@ -1,0 +1,32 @@
+package entidade;
+
+public class Conta {
+	private double limite;
+	private int nroConta;
+	
+	
+	public Conta() {
+		
+	}
+
+	public double getLimite() {
+		return limite;
+	}
+
+	public void setLimite(double limite) {
+		this.limite = limite;
+	}
+	
+	public int getNroConta() {
+		return nroConta;
+	}
+	public void setNroConta(int nroConta) {
+		this.nroConta = nroConta;
+	}
+
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return  "Numero da Conta: " + getNroConta() + ", Valor do Limite" + getLimite();
+	}
+}

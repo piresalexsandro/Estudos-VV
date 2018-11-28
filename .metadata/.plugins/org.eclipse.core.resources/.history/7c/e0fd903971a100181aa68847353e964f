@@ -1,0 +1,13 @@
+
+public class Conta {
+	//public int contador;
+	public int nroConta;
+	public static int contador;
+	
+	public Conta(){
+		//this.contador ++;
+		Conta.contador ++;
+		this.nroConta = Conta.contador * 457 + 1500;
+	}
+		
+}

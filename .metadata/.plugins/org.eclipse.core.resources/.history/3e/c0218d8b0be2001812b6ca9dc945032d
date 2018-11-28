@@ -1,0 +1,36 @@
+import java.math.RoundingMode;
+import java.text.DecimalFormat;
+import java.util.Locale;
+
+public class FormatarString {
+
+	public static void main(String[] args) {
+		String product1 = "Computer";
+		String product2 = "Office desk";
+		int age = 30;
+		int code = 1809;
+		char gender = 'F';
+		
+		double price1 = 1500.99;
+		double price2 = 453.75;
+		double measure = 53.237451;
+		
+		System.out.println("Products:");
+		System.out.printf("%s which price is $ %.2f%n", product1, price1);
+		System.out.printf("%s which price is $ %.2f%n%n", product2, price2);
+		Locale.setDefault(Locale.US);
+		System.out.printf("Record: %d years old, code %d and gender: %c %n", age, code, gender);
+		Locale.setDefault(new Locale("pt", "BR"));
+		System.out.printf("Measure with eight decimal palces: %8f %n", measure);
+		DecimalFormat dFormat = new DecimalFormat("#.###");
+	     dFormat.setRoundingMode(RoundingMode.UP);		
+    	System.out.printf("Rounded (three decimal places): " + (dFormat.format(measure)) + "\n");
+		Locale.setDefault(Locale.US);
+      	System.out.printf("US decimal point: %3f", measure);
+	//	System.out.printf("Rounded (three decimal places): " + Math.ceil(measure));
+		
+		
+		
+	}
+
+}

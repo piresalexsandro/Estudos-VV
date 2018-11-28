@@ -1,0 +1,23 @@
+package entidade;
+
+public class Cliente extends Pessoa{
+	private int codCli;
+	
+	public Cliente() {
+		
+	}
+
+	public int getCodCli() {
+		return codCli;
+	}
+	public void setCodCli(int codCli) {
+		this.codCli = codCli;
+	}
+	
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return super.toString() + "Codigo do Cliente: " + getCodCli(); 
+	}
+	
+}

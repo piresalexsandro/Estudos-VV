@@ -1,0 +1,10 @@
+
+public class ZeraContador {
+
+	public static void main(String[] args) {
+		System.out.println("Total de contas....: " + Conta.contador);
+		System.out.println("Zerando o contador de ontas");
+		Conta.contador = 0;
+	}
+
+}

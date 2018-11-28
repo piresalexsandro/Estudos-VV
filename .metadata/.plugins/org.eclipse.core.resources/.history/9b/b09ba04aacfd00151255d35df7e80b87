@@ -1,0 +1,15 @@
+
+public class MeuPrograma {
+		public static void main(String[] args){
+			System.out.println("Alexsandro Pires - Minha primeira aplicação Java \nUm comando duas linhas");
+			int idade;
+			idade = 34;
+			// pra concatenar usar pint(literal + (variravel)
+     		System.out.printl("Esta e a idade de Alexsandoro Pires " + (idade));
+     		
+     	    // calcula a idade no ano seguinte
+     		int idadeProxAno;
+     		idadeProxAno = idade + 1;
+     		System.out.print("Esta e a idade no proximo ano "+ (idadeProxAno));
+		}
+}

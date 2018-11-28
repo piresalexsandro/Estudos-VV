@@ -1,0 +1,13 @@
+
+public class BankAccount {
+	public int accountNum;
+	public double accountBalance;
+	public double accountLimit;
+	
+	public BankAgency bankAgency;
+	
+	void deposita(double valorDep){
+		this.accountBalance += valorDep;
+	}
+	
+}

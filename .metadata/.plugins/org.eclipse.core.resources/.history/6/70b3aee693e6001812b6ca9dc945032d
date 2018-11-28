@@ -1,0 +1,34 @@
+package br.com.udemy.curso;
+
+public class Student {
+	public double nota1;
+	public double nota2;
+	public double nota3;
+	public double notaFinal;
+	public double missingPoint;  
+	
+	public void notaFinal(double n1, double n2, double n3){
+		if (n1 > 30){
+			System.out.println("Nota do primeiro trimestre maior que 30");
+		} else if (n2 > 35){
+			System.out.println("Nota do segundo trimestre maior que 35");
+		} else if (n3 > 35){
+			System.out.println("Nota do terceiro trimestre maior que 35");
+		} else{
+			this.notaFinal = n1 + n2 + n3;
+		}
+	}
+
+	public boolean finalResult(){
+		double minimumNote = 60.00;
+		boolean retorno = false;
+		
+		if (this.notaFinal >= minimumNote){
+			retorno = true;
+		} else {
+			this.missingPoint = this.notaFinal - minimumNote;
+	    }	
+	    return retorno;
+	}
+
+}

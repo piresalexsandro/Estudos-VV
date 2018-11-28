@@ -1,0 +1,12 @@
+01 - O java esta lendo o conteudo deste arquivo!!!
+02 - O java esta lendo o conteudo deste arquivo!!!
+03 - O java esta lendo o conteudo deste arquivo!!!
+04 - O java esta lendo o conteudo deste arquivo!!!
+05 - O java esta lendo o conteudo deste arquivo!!!
+06 - O java esta lendo o conteudo deste arquivo!!!
+07 - O java esta lendo o conteudo deste arquivo!!!
+08 - O java esta lendo o conteudo deste arquivo!!!
+09 - O java esta lendo o conteudo deste arquivo!!!
+10 - O java esta lendo o conteudo deste arquivo!!!
+
+o este conteudo esta sendo gravado a partir do arquivo JavaVaiLer!!!

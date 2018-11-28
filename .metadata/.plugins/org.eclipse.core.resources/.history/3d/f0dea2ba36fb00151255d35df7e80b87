@@ -1,0 +1,15 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Pessoa p = new Pessoa();
+		Endereco e = new Endereco();
+		e.setDescricao("Rua teste");
+		p.setEndereco(e);
+		p.setNome("Teste");
+		
+		System.out.println(p.getNome() + " " + p.getEndereco().getDescricao());
+	}
+	
+}

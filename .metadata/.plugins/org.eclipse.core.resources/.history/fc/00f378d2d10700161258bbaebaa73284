@@ -1,0 +1,10 @@
+
+public class Soma {
+	public static void main(String[] args){
+		for(int i = 1; 1<100; i++){
+			int x = 0;
+			//System.out.println("Soma = " + x + 1);
+			System.out.printf("%.2f + %.2f = %.2f", i, x, i + x);
+		}
+	}
+}

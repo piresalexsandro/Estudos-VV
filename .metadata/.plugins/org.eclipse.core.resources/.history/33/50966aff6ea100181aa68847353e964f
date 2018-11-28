@@ -1,0 +1,11 @@
+
+public class Conta {
+	//public int contador;
+	public static int contador;
+	
+	public Conta(){
+		//this.contador ++;
+		Conta.contador ++;
+	}
+		
+}

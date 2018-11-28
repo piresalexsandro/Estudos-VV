@@ -1,0 +1,20 @@
+package entidade;
+
+public class Agencia {
+	private int nroAgencia;
+
+	public int getNroAgencia() {
+		return nroAgencia;
+	}
+
+	public void setNroAgencia(int nroAgencia) {
+		this.nroAgencia = nroAgencia;
+	}
+	
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return super.toString() + "Agencia: " + getNroAgencia();
+	}
+
+}

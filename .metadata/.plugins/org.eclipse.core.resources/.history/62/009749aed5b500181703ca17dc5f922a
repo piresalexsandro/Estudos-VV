@@ -1,0 +1,15 @@
+package br.com.k19.banco.sistema;
+
+public class TestaFuncionarioException {
+
+	public static void main(String[] args) {
+		Funcionario f = new Funcionario();
+		//f.aumentaSalario(-1500);
+		try{
+			f.aumentaSalario(-1500);
+		} catch (IllegalArgumentException e){
+			System.out.println("Houve uma IllegalArgumentException ao aumentar o salário");
+		}
+	}
+
+}

@@ -1,0 +1,16 @@
+
+public class TestaContador {
+
+	public static void main(String[] args) {
+
+		Conta c1 = new Conta();
+		System.out.println("Contador...: " + Conta.contador); // atributo de classe usa como referencia o nomeDaClasse.nomeDoAtributo
+		System.out.println("Nro Conta..: " + c1.nroConta); // atributo de instancia  usa como referencia o nomeDoObjeto.nomeDoAtributo
+		Conta c2 = new Conta();
+		System.out.println("Contador...: " + Conta.contador);
+		System.out.println("Nro Conta..: " + c2.nroConta);
+		
+		Conta.zeraContador(); // metrodo de classe usa como referencia o nomeDaClasse.nomeDoMetodo
+	}
+
+}

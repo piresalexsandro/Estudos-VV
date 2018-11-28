@@ -1,0 +1,19 @@
+package br.com.k19.testes;
+
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.PrintStream;
+
+public class ShowSomelinesOfTheFile{
+
+	public static void main(String[] args)  throws IOException{
+		FileOutputStream file = new FileOutputStream("JavaVaiGravar.txt");
+		PrintStream printStream = new PrintStream(file);
+		printStream.println("Primeira Linha");
+		printStream.println("Segunda Linha");
+		printStream.println("Terceira Linha");
+		
+		printStream.close();
+	}
+
+}

@@ -1,0 +1,19 @@
+package application;
+
+import java.text.SimpleDateFormat;
+import java.time.Instant;
+import java.util.Date;
+
+public class ProgramCalendar {
+
+	public static void main(String[] args) {
+		// manipulação de datas e tempo
+		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+	
+		Date d = Date.from(Instant.parse("2018-06-25T15:24:55Z")) ;
+
+		System.out.println(sdf.format(d));
+
+	}
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Empacotamento/src/br/k19&apos; to &apos;k19x&apos;" description="Rename resource &apos;k19&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/br/k19" name="k19x" stamp="1539176143883" updateReferences="true"/>
+</session>

@@ -1,0 +1,19 @@
+
+public class TestaControleDePonto {
+
+	public static void main(String[] args) {
+
+		Funcionario func = new Funcionario();
+		
+		Gerentes g = new Gerentes();
+		g.setMatricula(145874);
+
+		Telefonista t = new Telefonista();
+		t.setMatricula(9458);
+		
+		func.registraEntrada(g);
+		func.registraEntrada(t);
+
+	}
+
+}

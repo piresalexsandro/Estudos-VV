@@ -1,0 +1,14 @@
+package br.com.k19.banco.sistema;
+
+public class Funcionario {
+	private double salario;
+	
+	public void aumentaSalario(double valorAumento){
+		if (valorAumento >= 0){
+		this.salario += valorAumento;
+		} else {
+			IllegalArgumentException erro = new IllegalArgumentException();
+			throw erro;
+		}
+	}
+}
