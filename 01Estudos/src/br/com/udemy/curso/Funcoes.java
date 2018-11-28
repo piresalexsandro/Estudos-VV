@@ -36,6 +36,7 @@ public class Funcoes {
 
 	public static void showResult(int value){
 		System.out.println("higher number: " + value);
+		System.out.println("Teste commit git");
 	}
 	
 }
